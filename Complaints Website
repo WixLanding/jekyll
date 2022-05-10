@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Consumer Complaints</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+ <body>
+    <header>
+	 <div class="row">
+	 <ul class="main-nav">
+	 <li class="active"><a href=""> HOME </a><li>
+	  <li><a href=""> SERVICES </a><li>
+	   <li><a href="about us.html"> ABOUT </a><li>
+	    <li><a href=""> CONTACT </a><li>
+		 
+	 </ul> 
+	 <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="complaints.html">Complaints</a>
+    <a href="#Services">Services</a>
+	<a href="products.html">Financial Products</a>
+	<a href="about us.html">About</a>
+  </div>
+	
+	</div>
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+	
+	
+	<div class="hero">
+	<h1>Complaints on Financial products and services</h1>
+      <div class="button">
+	       <a href="complaints.html" class="btn btn-one"> Complaints</a>
+		   <a href="products.html" class="btn btn-two"> Products</a>
+	  </div>
+	</div>
+
+	 
+	
+	</header>
+ </body>
+</html>
+
+    © 2022 GitHub, Inc.
+
+    Terms
+    Privacy
+    Security
+    Status
